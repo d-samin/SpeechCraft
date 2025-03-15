@@ -1,0 +1,2 @@
+C:/Users/Admin/Documents/flutter_projects/SpeechCraft/speech_craft/android/app/.cxx/Debug/6i4l5n6j/x86/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Documents/flutter_projects/SpeechCraft/speech_craft/android/app/.cxx/Debug/6i4l5n6j/x86/CMakeFiles/rebuild_cache.dir
