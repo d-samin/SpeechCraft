@@ -52,12 +52,10 @@ class PatternForR1 extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 20),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset('assets/patters_for_R/firewood.png', width: 100, height: 100),
-                      Image.asset('assets/patters_for_R/grass.png', width: 150, height: 100),
-                    ],
+                  Expanded( 
+                    child: Container(
+                      child: Image.asset('assets/patters_for_R/grassR.png'),
+                    ),
                   ),
                 ],
               ),

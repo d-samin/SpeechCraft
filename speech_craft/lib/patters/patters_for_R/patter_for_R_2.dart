@@ -28,10 +28,10 @@ class PatternForR2 extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: MediaQuery.of(context).size.height * 0.2, // Изменено значение top
+            top: MediaQuery.of(context).size.height * 0.2, 
             left: 20,
             right: 20,
-            height: MediaQuery.of(context).size.height * 0.4, // Изменено значение height
+            height: MediaQuery.of(context).size.height * 0.4, 
             child: Container(
               padding: EdgeInsets.all(16),
               decoration: BoxDecoration(
@@ -43,7 +43,7 @@ class PatternForR2 extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    'На дворе трава,\nна траве дрова',
+                    'Грянул гром - \nгроза в разгаре',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 30,
@@ -52,42 +52,15 @@ class PatternForR2 extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 20),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset('assets/patters_for_R/firewood.png', width: 100, height: 100),
-                      Image.asset('assets/patters_for_R/grass.png', width: 150, height: 100),
-                    ],
+                  Expanded( 
+                    child: Container(
+                      child: Image.asset('assets/patters_for_R/stormR.png'),
+                    ),
                   ),
                 ],
               ),
             ),
           ),
-          // Positioned(
-          //   bottom: 50,
-          //   left: 50,
-          //   right: 50,
-          //   child: ElevatedButton(
-          //     onPressed: () {
-          //       // Действие при нажатии "Далее"
-          //     },
-          //     style: ElevatedButton.styleFrom(
-          //       backgroundColor: Color(0xFFFFC19C),
-          //       padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
-          //       shape: RoundedRectangleBorder(
-          //         borderRadius: BorderRadius.circular(30),
-          //       ),
-          //     ),
-          //     child: Text(
-          //       'Далее',
-          //       style: TextStyle(
-          //         fontSize: 18,
-          //         fontWeight: FontWeight.bold,
-          //         color: Color(0xFF123452),
-          //       ),
-          //     ),
-          //   ),
-          // ),
         ],
       ),
     );

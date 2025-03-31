@@ -61,16 +61,37 @@ flutter:
   assets:
     - assets/logo.png 
     - assets/Cloud1.png 
-    - assets/exhale_exercise1.png
-    - assets/tongue.png
-    - assets/tiger_for_R.png
-    - assets/horse_for_R.png
-    - assets/R/car_for_R.png
-    - assets/S/whistle_for_S.png
-    - assets/S/ex3_for_s 1.png
     - assets/book.png 
-    - assets/patters_for_R/firewood.png
-    - assets/patters_for_R/grass.png
+    # - assets/exhale_exercise1.png
+    # - assets/tongue.png
+
+    # R
+    - assets/R/
+    - assets/patters_for_R/
+
+    # S
+    - assets/S/
+    - assets/patters/patters_for_S/
+
+    # L
+    - assets/L/
+    - assets/patters/patters_for_L/
+
+    # Ш
+    - assets/SH/
+    - assets/patters/patters_for_SH/
+
+    # К
+    - assets/K/
+    - assets/patters/patters_for_K/
+
+    # Ц
+    - assets/Ц/
+    - assets/patters/patters_for_Ц/
+
+
+
+
 
 
 

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:speech_craft/exercises/warm-ups/warm-up1.dart';
-import 'package:speech_craft/exercises/warm-ups/warm-up2.dart';
+import 'package:speech_craft/exercises/exercises_for_SH/exercise1ForSH.dart';
+import 'package:speech_craft/exercises/exercises_for_SH/exercise2ForSH.dart';
+import 'package:speech_craft/patters/patters_for_SH/PattersForSH.dart';
 
 class MainExercisesScreenForSH extends StatelessWidget {
   final String disorderName;
@@ -25,16 +26,16 @@ class MainExercisesScreenForSH extends StatelessWidget {
           Positioned(bottom: -10, right: -80, child: Image.asset('assets/Cloud1.png', width: 300)),
           
           // Добавляем кнопку возврата
-                Positioned(
+        Positioned(
         top: 50,
         left: 20,
         right: 20,
         child: GestureDetector(
           onTap: () {
-            // Navigator.push(
-            //   context,
-            //   MaterialPageRoute(builder: (context) => PatternsForSH()), 
-            // );
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => PattersForSH()), 
+            );
           },
           child: Container(
             height: 100,
@@ -50,7 +51,7 @@ class MainExercisesScreenForSH extends StatelessWidget {
               ],
             ),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Padding(
                   padding: const EdgeInsets.only(left: 35.0),
@@ -78,7 +79,7 @@ class MainExercisesScreenForSH extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Exercise1Screen()),
+                  MaterialPageRoute(builder: (context) => Exercise1ForSH()),
                 );
               },
               child: _buildNumberCircle('1', Color(0xFFFC9898)),
@@ -92,7 +93,7 @@ class MainExercisesScreenForSH extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Exercise2Screen()),
+                  MaterialPageRoute(builder: (context) => Exercise2ForSH()),
                 );
               },
               child: _buildNumberCircle('2', Color.fromARGB(255, 252, 223, 129)),
@@ -103,8 +104,8 @@ class MainExercisesScreenForSH extends StatelessWidget {
           Positioned(top: 540, right: 55, child: _buildNumberCircle('4', Color(0xFFFA9EA9))),
           Positioned(top: 640, left: 55, child: _buildNumberCircle('5', Color.fromARGB(255, 252, 223, 129))),
           Positioned(
-            top: 200,
-            right: 30,
+            top: 180,
+            right: 80,
             child: _buildQuestionCircle(),
           ),
         ],

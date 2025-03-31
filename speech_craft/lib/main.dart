@@ -11,7 +11,7 @@ class SpeechCraftApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: 'Montserrat', // Устанавливаем шрифт
+        fontFamily: 'Montserrat',
       ),
       home: WelcomeScreen(),
     );

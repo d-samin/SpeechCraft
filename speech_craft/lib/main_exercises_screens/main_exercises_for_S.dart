@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:speech_craft/exercises/exercises_for_S/exercises_for_S_firstCircle/exercise1ForS_1.dart';
+import 'package:speech_craft/exercises/exercises_for_S/exercise1ForS.dart';
+import 'package:speech_craft/exercises/exercises_for_S/exercise2ForS.dart';
+import 'package:speech_craft/patters/patters_for_S/PattersForS.dart';
 
 
 class MainExercisesScreenForS extends StatelessWidget {
@@ -31,10 +33,10 @@ class MainExercisesScreenForS extends StatelessWidget {
         right: 20,
         child: GestureDetector(
           onTap: () {
-            // Navigator.push(
-            //   context,
-            //   MaterialPageRoute(builder: (context) => PatternsForS()), 
-            // );
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => PattersForS()), 
+            );
           },
           child: Container(
             height: 100,
@@ -50,7 +52,7 @@ class MainExercisesScreenForS extends StatelessWidget {
               ],
             ),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Padding(
                   padding: const EdgeInsets.only(left: 35.0),
@@ -78,7 +80,7 @@ class MainExercisesScreenForS extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Exercise1ForS_1()),
+                  MaterialPageRoute(builder: (context) => Exercise1ForS()),
                 );
               },
               child: _buildNumberCircle('1', Color(0xFFFC9898)),
@@ -90,10 +92,10 @@ class MainExercisesScreenForS extends StatelessWidget {
             right: 55,
             child: GestureDetector(
               onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => Exercise1ForS_2()),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Exercise2ForS()),
+                );
               },
               child: _buildNumberCircle('2', Color.fromARGB(255, 252, 223, 129)),
             ),
@@ -103,8 +105,8 @@ class MainExercisesScreenForS extends StatelessWidget {
           Positioned(top: 540, right: 55, child: _buildNumberCircle('4', Color(0xFFFA9EA9))),
           Positioned(top: 640, left: 55, child: _buildNumberCircle('5', Color.fromARGB(255, 252, 223, 129))),
           Positioned(
-            top: 200,
-            right: 30,
+            top: 180,
+            right: 80,
             child: _buildQuestionCircle(),
           ),
         ],

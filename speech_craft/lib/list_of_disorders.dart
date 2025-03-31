@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:speech_craft/main_exercises_screens/main_exercises_for_CH.dart';
-import 'package:speech_craft/main_exercises_screens/main_exercises_for_DZ.dart';
+import 'package:speech_craft/main_exercises_screens/main_exercises_for_%D0%A6.dart';
+import 'package:speech_craft/main_exercises_screens/main_exercises_for_K.dart';
+import 'package:speech_craft/main_exercises_screens/main_exercises_for_L.dart';
 import 'package:speech_craft/main_exercises_screens/main_exercises_for_R.dart';
 import 'package:speech_craft/main_exercises_screens/main_exercises_for_S.dart';
 import 'package:speech_craft/main_exercises_screens/main_exercises_for_SH.dart';
-import 'package:speech_craft/main_exercises_screens/main_exercises_for_TS.dart';
-// import 'package:speech_craft/main_exercises_screens/main_exercises_for_DZH.dart';
+
 
 class ListOfDisordersScreen extends StatelessWidget {
   @override
@@ -48,10 +48,10 @@ class ListOfDisordersScreen extends StatelessWidget {
                         children: [
                           _buildDisorderButton(context, 'Сонорный звук Р', MainExercisesScreenForR(disorderName: 'Сонорный звук Р',)),
                           _buildDisorderButton(context, 'Щипящий звук С', MainExercisesScreenForS(disorderName: 'Щипящий звук С',)),
-                          _buildDisorderButton(context, 'Щипящий звук Щ', MainExercisesScreenForSH(disorderName: 'Щипящий звук Щ')),
-                          _buildDisorderButton(context, 'Аффриката Ц', MainExercisesScreenForTS(disorderName: 'Аффриката Ц',)),
-                          _buildDisorderButton(context, 'Аффриката Ч', MainExercisesScreenForCH(disorderName: 'Аффриката Ч',)),
-                          _buildDisorderButton(context, 'Аффриката Дз', MainExercisesScreenForDZ(disorderName: 'Аффриката Дз',)),
+                          _buildDisorderButton(context, 'Сонорный звук Л', MainExercisesScreenForL(disorderName: 'Сонорный звук Л',)),
+                          _buildDisorderButton(context, 'Щипящий звук Ш', MainExercisesScreenForSH(disorderName: 'Щипящий звук Ш')),
+                          _buildDisorderButton(context, 'Аффриката Ц', MainExercisesScreenForTC(disorderName: 'Аффриката Ц',)),
+                          _buildDisorderButton(context, 'Глухой звук К', MainExercisesScreenForK(disorderName: 'Глухой звук К',)),
                           // _buildDisorderButton(context, 'Аффриката Дж', MainExercisesScreenForDZH()),
                         ],
                       ),
