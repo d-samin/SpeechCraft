@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:speech_craft/chatBotScreen.dart';
+// import 'package:speech_craft/DiagnosticPreparation.dart';
 import 'package:speech_craft/list_of_disorders.dart';
 
 class IdentifyProblemScreen extends StatelessWidget {
@@ -30,10 +32,10 @@ class IdentifyProblemScreen extends StatelessWidget {
                 // Кнопка "Пройти тест"
                 ElevatedButton(
                   onPressed: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => ListOfDisordersScreen()),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ChatBotScreen()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xFFFFAB91),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:speech_craft/chatBotScreen.dart';
 import 'package:speech_craft/exercises/exercises_for_R/exercises_for_R/exercise1ForR.dart';
 import 'package:speech_craft/exercises/exercises_for_R/exercises_for_R/exercise2ForR.dart';
 import 'package:speech_craft/exercises/exercises_for_R/exercises_for_R/exercise3ForR%20.dart';
@@ -77,6 +78,22 @@ class MainExercisesScreenForR extends StatelessWidget {
                 ),
               ),
             ),
+
+            Positioned(
+              top: 180, 
+              right: 80,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ChatBotScreen()), // Переход в чат-бот
+                  );
+                },
+                child: _buildQuestionCircle(),
+              ),
+            ),
+
+
             Positioned(
               top: 200,
               left: 55,
@@ -155,11 +172,11 @@ class MainExercisesScreenForR extends StatelessWidget {
                 child: _buildNumberCircle('6', Color.fromARGB(255, 255, 212, 72)),
               ),
             ),
-            Positioned(
-              top: 180,
-              right: 80,
-              child: _buildQuestionCircle(),
-            ),
+            // Positioned(
+            //   top: 180,
+            //   right: 80,
+            //   child: _buildQuestionCircle(),
+            // ),
           ],
         ),
       ),
